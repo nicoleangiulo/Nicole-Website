@@ -1,0 +1,116 @@
+Delivered-To: nangiulo55@gmail.com
+Received: by 2002:a05:640c:a710:b0:24f:b9c0:1f6b with SMTP id i16csp751169eig;
+        Wed, 19 Nov 2025 19:57:46 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IH8gbBwghGLmT9iIgtD8hfOveO9BVMdRGvkHgLlXEdbrfemX0VU70eXiBmfZRftPiqiJgrh
+X-Received: by 2002:a05:6214:1249:b0:87c:765:dc6 with SMTP id 6a1803df08f44-8846dfdb82cmr27606466d6.8.1763611066343;
+        Wed, 19 Nov 2025 19:57:46 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1763611066; cv=none;
+        d=google.com; s=arc-20240605;
+        b=X+qZs2g7k36d3/KBeE6V+cPccr210ZYT6MVaezp1x8vUsBh4aK5XVvAOXiqKlz5dam
+         sTLVpMCrUFyOyj2ifjwTtX2+HNqcNCCaJP/BjiG1NJp4LzbqUuqg0bq9MXlfqR2zaQlI
+         qMjgKlW/XDbHgn3e+q5fDLTNIfW5sixXWcgnte0fWmfSKKYK2iVsp7P/1BpksVQkd9y/
+         ARPlR8k7bWqg0a2SRY4TgFfdcKnEnvkDRt5+1H90dkzjE4ZGwaViO7MCJwKaGKEK7Ttt
+         0jOff3rUT7Sp/hVTMXRWMA8FSDM2ZREqyBxB2e+jy02xIh+i775AqRnrOHT/oP3ilQYL
+         hxwg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=references:to:message-id:subject:date:mime-version:from
+         :content-transfer-encoding:dkim-signature;
+        bh=RdvUNv0L2eAzxOqRGKM1jOokYb/VwGsHo4TelteiJ7k=;
+        fh=zxQ4nZYJLJij09DWpthZYFZz1/ZOTq5Qoo4Pr4jotS8=;
+        b=HKr/zN7OSjfS9/CA9PytrF7PhGQbMwUyAj63VV5Febin4Cx/IaG0y70qKV5QYHTQEj
+         sBk9ivL9EzvFR5p3jJ4NLGDjJ6P5WfIisLqJnBUBmNPE5NfTyTcGKz42gmYnJ305DmSO
+         EEAIo2u3zHd4DQANAYsYTyuYGhB7z1RmoJzvPjfnNWOvhZZqU0Rx7VhzXPL/xpTppebq
+         VpKWQ1V6mO3Q5OrAaJ/InqpBayQAxUNJrBy5WwSlFTQpJJNY/mkIxBMxkXHiKOfWxARC
+         hb5UDcGAcw1w1DlRpS14lmHkAr+y9UZVhg5Kcezupkn1ixhk2LB3XP7Kw7yymF8kYLJk
+         pkdQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@aol.com header.s=a2048 header.b=NTEWNTvf;
+       spf=pass (google.com: domain of nangiulo@aol.com designates 66.163.188.146 as permitted sender) smtp.mailfrom=nangiulo@aol.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=aol.com
+Return-Path: <nangiulo@aol.com>
+Received: from sonic303-20.consmr.mail.ne1.yahoo.com (sonic303-20.consmr.mail.ne1.yahoo.com. [66.163.188.146])
+        by mx.google.com with ESMTPS id 6a1803df08f44-8846e62cda3si4437946d6.842.2025.11.19.19.57.46
+        for <nangiulo55@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 19 Nov 2025 19:57:46 -0800 (PST)
+Received-SPF: pass (google.com: domain of nangiulo@aol.com designates 66.163.188.146 as permitted sender) client-ip=66.163.188.146;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@aol.com header.s=a2048 header.b=NTEWNTvf;
+       spf=pass (google.com: domain of nangiulo@aol.com designates 66.163.188.146 as permitted sender) smtp.mailfrom=nangiulo@aol.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=aol.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=aol.com; s=a2048; t=1763611065; bh=RdvUNv0L2eAzxOqRGKM1jOokYb/VwGsHo4TelteiJ7k=; h=From:Date:Subject:To:References:From:Subject:Reply-To; b=NTEWNTvfZBJPpiMfbeqP0B9Vcgvq91DcJRy4Osprxg48NLp92OdtSDjU6qt2ru09r5THBnPBBlym0xmAOLCiKG12kCc9r2BqDuLNJjQYrbKrxqEVY43lOMoFSUqYCaktMBTHD2OXvwW3ze7ivzMAzNOIzErFkJvB2XOmrXlhi26iyBv4WkUSQZAJPfJ5kol0azJIQJ2whz6/2EvdS5oAJ1SeQ+3dH2dvj3AD+SMlN+wb6/Y3+yUkab7oJMoNQ2nQndNhBOL2O0wfUZ94IpM9kpXP8W1ZpYuIDfXq5H/641s3fgcETb/UCo36AKReSNfb10zed+IsXeSqGXClwjMrZg==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1763611065; bh=PNqFPjWqYtLUoa8Zaz76hnryNNsmW6LgEuV6QhzZewG=; h=X-Sonic-MF:From:Date:Subject:To:From:Subject; b=BZqp+H+aQzr++/mLZVQ+1mwyIlc1BhK4HcymfJKVuYT5NdVdBuDkuFhIT1TJ4yp+M1NktKdZXlEO3SJuyHAhyz4Hh0Iu9R+3OOq/9+sbA8Jo/Giqh+dB9kx6TnSG8fVhoyEyxX+bpOnLzR+fdv7gXjpXf1thjTg/9y/HO/K9a86lyCRJyiFDeE5aACEYaTmUDvTmpMO3FEnaSDLnWiOzTp2UaYWWF30QV3QY7UQqqhKnsA4K1lE3op3Ek9JqwNw35OnoyJ7cQHu7Qk46zW5cYgaPBLemdm7ut6vGjq5VheUXD+ECJOl8K8Nw+55ETZmNeNI+qUSrsbVCeGw3jLpOTg==
+X-YMail-OSG: TyaCQ5oVM1kDPQh.9RCZsJKAh9Ood3VKY2Pz2S5pJbwgH_gnLF1zkO84Uom7t0p
+ cPpgj8eqP0C4rq1B7L.Ct9PNvs74lup27Cysx7CzMNSCMOZ1TM5gcB.wMIUjUX8x0SeUu0OBu7B6
+ dut1iUXGvGilDNGNffWUze1Frwou2tQJCqssxzBkhYNScMv_f29KdZofMjdVOZlmdA620elpdDgZ
+ zbNwMfAmzn1.iJLYlHZiepQs4Sk6soo9uA5VFwLdjc0W8hUfs2nz5qvvpHFxlp1e_hExuHAeoyVP
+ m2ukhjEJdQeR_y9QbQMJwhcwE8_jhamchNt20DtFMTYONcH97D3mQELySROV2XzFrEvRq9LwC6cX
+ 6OVhXXmI.dMMYym7UghKgpVsVYsAYMuyR3VywZ9ztuL8h0xyuxxh_Pyba8CcmiXCP1p0C5KnRfcu
+ kktfl1._Ti.QfNxrawqPS.zS3qHmJhpAbNEx4f73ptWGTx1Dylvho2d_KptOsr7SX_qj4cdVMjf9
+ K1A25hpu7Tg0hRXo.1b4hHakwdB8lnd6fEEmlY8DXXZ2P4b6S.hJxL207RBdwtlIKwB7oig6P2u6
+ JJRrkyqiDlu_q.zlqDXYagsGlMR3p_FdWqQl6lC1tUPPLV2cz.aDFmSRmeWFqH41.PZV4lv5l9ja
+ TaCVIJCHGT_2I39KP9bXWcECMO98UDO40pR7g3dLTzTP2zCzEsHx16tv8IxfrgPUkeP93eRNRWj8
+ kycdLO89jL3vJEqfytkPT7WkGf4MHEQBRok.4IyNYksFU5_OdR9W7Z6.KLZCMlZReyNFmAjnYIbY
+ i1sq_5sknd2RlyUAjR_VEefSTh9JjJnnEGRSW7DiC.K6xqumBrElN5UO3b21Z_2MroWfkCwMPO.f
+ rjD2xyfVrkawIrmK5N4aXiSoWDLZo7z96EfVLV1FzLerSsVdyhEz6KbpxSYY2DffGjGT2UtaZwBq
+ .teS10nHnXyuYRt3lpAjGarg7bM6J0.02C9notlkuqx_TgqlGwuHl61Z43zVRUJj0ZL4d5M3Zxgy
+ vuml0XwAutYbqB0eZgi62xwu1O2_vO2By1pXvMQan6EyABnymUlMyg6ERMqPO76MwqosopoLwkUV
+ IoGObOqwLHoWBFevLhx0ZIcVolbucdg6F26mR5vY0GmJfryDvv4B6q8LMwUl4gL13kji7QwmE7L4
+ djy3kj5yRBBOaYGDXwYFAw4SHDwWkN5rV.5p1mjZPLokafH7W2InPrSmOE62qr71wiMwqbLSJ8wI
+ IhHpHY4wcln8XbDgcLqSvDsrhO1BeAMUeDl86bR3u4vZhZi0zftmizw3yVZjW1KFx2GnY4zFcD5S
+ PFOY9Psnr83Zutx4VeujUUxYxUIL4XLqmxWi2PfXNRt9VcO1.McZ7_q_KFWnRILKKOGS_jMx4bdU
+ yy0Fx1SUnjqr2uWK.WbmkMRbQ3fvXq9zltgQOOJxJ9yW.xXTGR_KO0Zlg5IA5lfFpTg7DftziSwi
+ S4Qu_McIJ6GlJM9gdU8az8g7_RHk0e1.CYsl4xWtFFWfRK4Tf36o75_krSvWDCsJmJPRiFzwTJT5
+ pOkrqWbS.JVG.aeQcDZgx.VMCnn5BgXG43NPs_TcSamcaJCVMHtCoPeY0DGWrVLzQ7XXNhfelZ10
+ 97QS32tz6lmKInvD9CDIenrFWswMrop5XqeDsMMW5yANX17ZcA0R1v30ahy8tJOdAjXVURuKvmby
+ RGY_ZX07AChTI9T21SkLEgMrIVRQrIl5Qp8qbZ3krsD31WuAtSIoYbbeUMSfd.JV2Q0AQMns10Hc
+ L81Ibw_XyVY.ZkUsUGKWw2HhdXcsRvae.w6kv5j6vU.AGu1juvB8fCcwKVXRG8lRK4OB9fuPGKmE
+ rHWuOeq9I7F49W7c9xNqcIad.KJn2HQjLmD.uyIBJDnXm2f02Il2T5wtqtWvY41pLiu4FT5inPjk
+ AlsnUlhG1DAAiS0z2ihRTbpxV_21UT.bOFW_pADxgHcSAK_O0BwszzbKgEnzxuXg_cTWsMhjDjUF
+ 9LERB22U_WxgJqXioBlwXHyFtOehi5fq0O_7m9SkVSZjzeEm7QlFPa.4_qR2pUXA37kf93srkE9q
+ VStMwzkglxf71lIPy7XvZTsqAOA4V5MxGlB7_wYmB4WIjMtMOjkZ_cCUSLT4lHvGYMEni90LCXYo
+ BO_Y.0YkhpLwkL_ZRJvNQ4tdTLNi3NqsnntWIUnKLvf_5pwith2p4ITwBFRU2NWc1iR729RUbuh1
+ gpkzv
+X-Sonic-MF: <nangiulo@aol.com>
+X-Sonic-ID: 91c7eab0-e7c4-449c-b39a-1753f767daad
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic303.consmr.mail.ne1.yahoo.com with HTTP; Thu, 20 Nov 2025 03:57:45 +0000
+Received: by hermes--production-bf1-9c4b8bbbf-rd8jf (Yahoo Inc. Hermes SMTP Server) with ESMTPA ID 6da399198fcd775a73cabb6651246ae1;
+          Thu, 20 Nov 2025 03:57:43 +0000 (UTC)
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+From: NICOLE ANGIULO <nangiulo@aol.com>
+Mime-Version: 1.0 (1.0)
+Date: Wed, 19 Nov 2025 22:57:41 -0500
+Subject: =?utf-8?Q?<!DOCTYPE_html>_<html_lang=3D"en">_<head>_<meta_charse?=
+ =?utf-8?Q?t=3D"UTF-8">_<meta=E2=80=A6?=
+Message-Id: <9120A509-2EEC-428D-A2BB-4A8BA0BCF61C@aol.com>
+To: nangiulo55@gmail.com
+X-Mailer: iPhone Mail (22G100)
+References: <9120A509-2EEC-428D-A2BB-4A8BA0BCF61C.ref@aol.com>
+Content-Length: 1608
+
+<!DOCTYPE html> <html lang=3D"en"> <head> <meta charset=3D"UTF-8"> <meta nam=
+e=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.0"> <title=
+>Tiny Voices Speech Therapy NJ | Nicole Angiulo</title> <meta name=3D"descri=
+ption" content=3D"Tiny Voices Speech Therapy in NJ =E2=80=94 personalized sp=
+eech therapy services for children."> <meta name=3D"keywords" content=3D"spe=
+ech therapy, NJ, children, Tiny Voices, language development"> <link rel=3D"=
+stylesheet" href=3D"style.css"> </head> <body> <!-- Header / Navigation --> <=
+header> <h1>Tiny Voices Speech Therapy</h1> <nav> <a href=3D"index.html">Hom=
+e</a> <a href=3D"about.html">About</a> <a href=3D"services.html">Services</a=
+> <a href=3D"contact.html">Contact</a> </nav> </header> <!-- Main Content --=
+> <main> <section> <h2>Welcome to Tiny Voices</h2> <p>Providing personalized=
+ speech therapy services for children in New Jersey. Our goal is to help eve=
+ry child find their voice and build confidence in communication.</p> </secti=
+on> <section> <h2>Our Services</h2> <ul> <li>Articulation Therapy</li> <li>L=
+anguage Development</li> <li>Fluency & Stuttering Support</li> <li>Speech As=
+sessments</li> </ul> </section> <section> <h2>Why Choose Us?</h2> <p>Experie=
+nced therapist, individualized plans, and a friendly, supportive environment=
+ for children of all ages.</p> </section> </main> <!-- Footer --> <footer> <=
+p>Contact: <a href=3D"mailto:nicole@tinyvoicesnj.com">nicole@tinyvoicesnj.co=
+m</a></p> <p>&copy; 2025 Tiny Voices Speech Therapy NJ</p> </footer> </body>=
+ </html>
+
+Nicole Angiulo, CCC-SLP, TSHH, SLS=
+
